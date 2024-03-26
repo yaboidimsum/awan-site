@@ -147,7 +147,7 @@ export default function Home() {
                     <CardItem
                       translateZ={20}
                       as={Link}
-                      href="https://twitter.com/mannupaaji"
+                      href="https://www.its.ac.id/informatika/id/beranda/"
                       target="__blank"
                       className="text-md flex w-full items-center justify-center rounded-xl border border-slate-700/30 bg-slate-700/30 px-4 py-2 text-white transition duration-300 ease-in-out hover:border-purple-400 hover:bg-purple-600 hover:text-white"
                     >
