@@ -40,24 +40,5 @@ export const typographyVariants = cva('font-inter text-gray-950', {
     className?: string;
     children: React.ReactNode;
   }
-  
-  export default function Typography<T extends React.ElementType>({
-    as,
-    children,
-    className,
-    variant,
-    weight,
-    ...rest
-  }: TypographyProps<T> &
-    Omit<React.ComponentPropsWithoutRef<T>, keyof TypographyProps<T>>) {
-    const Component = as || 'p';
-  
-    return (
-      <Component
-        className={cn(typographyVariants({ variant, weight, className }))}
-        {...rest}
-      >
-        {children}
-      </Component>
-    );
-  } 
+
+    
