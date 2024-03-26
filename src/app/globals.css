@@ -2,32 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-zinc-950;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-image: linear-gradient(to right, #60a5fa, #c084fc);
+  background-size: 200% auto;
+  animation: gradient 2s linear infinite;
+  -webkit-background-cip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-gradient-its {
+  background-image: linear-gradient(to right, #60a5fa, #4169e1, #ccccff);
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-gradient-text-1 {
+  background-image: linear-gradient(to right, #60a5fa, #c084fc, #f88379);
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-gradient-text-subtitle {
+  background-image: linear-gradient(
+    to right,
+    #f88379,
+    #7b61ff,
+    #ccccff,
+    #6495ed,
+    #d8bfd8,
+    #e30b5c,
+    #7f00ff
+  );
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+
+.animate-gradient-text-content {
+  background-image: linear-gradient(to right, #f88379, #e30b5c, #ccccff);
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+
+.animate-gradient-text-open {
+  background-image: linear-gradient(to right, #afe1af, #50c878, #90ee90);
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+.animate-gradient-text-close {
+  background-image: linear-gradient(to right, #f88379, #e30b5c, #ccccff);
+  background-size: 200% auto;
+  animation: gradient 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
