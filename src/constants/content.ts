@@ -565,7 +565,7 @@ const experienceContent = [
         ],
         location: "East Java, Surabaya",
         title: "Machine Learning Cohort",
-        year: "August 2023 - October 2023",
+        year: "February 2024 - Ongoing",
         techstack: [
           {
             image: "/skill/language/python.png",
