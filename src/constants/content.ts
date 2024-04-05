@@ -1,5 +1,21 @@
 const portfolioContent = [
   {
+    src: "/portfolio/Libur.On.png",
+    title: "COMPFEST 15: Libur.On",
+    technique: "UX Design, UX Research, UX Writer, Design System, Design Thinking",
+    tech: [
+      {
+        image: "/skill/ui-design/figma.png",
+        name: "Figma",
+      },
+    ],
+    firstLink: "https://partner.compfest.id",
+    secondLink:
+      "https://www.figma.com/file/u5NhRuBk3QtPbtPuxyZlzM/Portfolio?type=design&node-id=0%3A1&mode=design&t=kPexva31pTKH5tOz-1",
+    firstButtonText: "VISIT COMPFEST",
+    secondButtonText: "FIGMA LIBUR.ON COMPFEST 15 2022",
+  },
+  {
     src: "/portfolio/Landing ITS EXPO.png",
     title: "ITS EXPO 2023",
     technique: "UI/UX Design, Website Design, Design System",
