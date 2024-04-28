@@ -2,7 +2,8 @@ const portfolioContent = [
   {
     src: "/portfolio/Libur.On.png",
     title: "COMPFEST 15: Libur.On",
-    technique: "UX Design, UX Research, UX Writer, Design System, Design Thinking",
+    technique:
+      "UX Design, UX Research, UX Writer, Design System, Design Thinking",
     tech: [
       {
         image: "/skill/ui-design/figma.png",
@@ -151,7 +152,8 @@ const portfolioContent = [
   {
     src: "/portfolio/Alpha-Academy-FE.png",
     title: "Alpha Academy",
-    technique: "Website Design, Figma, Website Development, Next JS, Tailwind CSS, React JS",
+    technique:
+      "Website Design, Figma, Website Development, Next JS, Tailwind CSS, React JS",
     tech: [
       {
         image: "/skill/ui-design/figma.png",
@@ -449,7 +451,7 @@ const experienceContent = [
           "CSS Styling",
         ],
         location: "East Java, Surabaya",
-        title: "Frontend Developer",
+        title: "Frontend Developer Internship",
         year: "January 2024 - Present",
         techstack: [
           {
@@ -474,6 +476,44 @@ const experienceContent = [
           "Create certain logic and features of Alpha Academy website",
           "Communicate and discuss with CTO, UI/UX Designer, and Backend Developer about the development of Alpha Academy website",
           "Learn from other team members about frontend development especially using Next JS and Tailwind CSS",
+        ],
+      },
+      {
+        client: "Information Intelligent Management Laboratory",
+        category: [
+          "Frontend",
+          "Next JS Framework",
+          "React JS",
+          "UI Slicing",
+          "CSS Styling",
+        ],
+        location: "East Java, Surabaya",
+        title: "Frontend Developer Internship",
+        year: "April 2024 - Present",
+        techstack: [
+          {
+            image: "/skill/learning/typescript.png",
+            name: "Figma",
+          },
+          {
+            image: "/skill/front-end/reactjs.png",
+            name: "React JS",
+          },
+          {
+            image: "/skill/front-end/nextjs.png",
+            name: "Next JS",
+          },
+          {
+            image: "/skill/front-end/tailwind.png",
+            name: "Tailwind CSS",
+          },
+        ],
+        description: [
+          "Worked on the migration of ERP ITS from a legacy truncated version to an updated iteration utilizing the Next.js framework.",
+          "Develop and integrate specific logic, while ensuring seamless transition of existing features to the updated platform.",
+          "Conduct UI refinement and CSS styling for the enhanced iteration of ERP ITS.",
+          "Acquire proficiency in Object-Oriented Programming (OOP) principles through React.js implementation.",
+          "Collaborate with the established backend infrastructure to effectively deploy new functionalities.",
         ],
       },
     ],
@@ -593,10 +633,8 @@ const experienceContent = [
           "End-to-End Machine Learning Workflow: Diagnosed ML errors, prioritized directions, compared with human-level performance, applied end-to-end, transfer, and multi-task learning.",
           "Advanced Deep Learning Techniques with TensorFlow: Used Functional API, learned distributed training, created computer vision models, explored generative deep learning.",
           "Understanding Key Concepts in Generative AI: Learned basic concepts, Large Language Models, responsible AI with Google Cloud.",
-          "Preparation for TensorFlow Developer Certificate Exam: Created software with TensorFlow, understood ML/DL principles, applied for image, text, and Time Series tasks."
-      ]
-      
-      ,
+          "Preparation for TensorFlow Developer Certificate Exam: Created software with TensorFlow, understood ML/DL principles, applied for image, text, and Time Series tasks.",
+        ],
       },
     ],
   },
@@ -756,8 +794,7 @@ const certificateContent = [
   },
   {
     src: "/certificate/min/Coursera-Git.png",
-    title:
-      "Coursera Google Certification: Introduction to Git and Github",
+    title: "Coursera Google Certification: Introduction to Git and Github",
     technique:
       "Version Control System, Branching, Merging, Rebasing, Pull Request, Gitflow, Code Review, Open Source Contribution",
     firstLink: "https://coursera.org/share/34789e5af4117bde71bd5a8b0e60bb29",
@@ -767,5 +804,10 @@ const certificateContent = [
   },
 ];
 
-const content = { portfolioContent, skillContent, experienceContent, certificateContent};
+const content = {
+  portfolioContent,
+  skillContent,
+  experienceContent,
+  certificateContent,
+};
 export default content;
